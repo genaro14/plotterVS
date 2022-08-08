@@ -16,3 +16,11 @@ Firmware:
 https://github.com/misan/grbl-servo
 
 Arduino case:https://www.thingiverse.com/thing:2379541
+
+Code repository for plotting
+## Python
++ Fake cyrcle
+[Circle of Lines](./python/fakeCircle/fakeCircle.md).
++ L Systems
+[Lindenmayer Systems](./python/lindenmayerSystems/lindenmayerSystems.md)
+

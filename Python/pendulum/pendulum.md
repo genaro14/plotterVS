@@ -1,0 +1,7 @@
+# Pendulum
+
+This is a simple harmonograph simulator to generate random-ish harmonographs. It asks for the number of pendulums, and exits if the number is 0. It also asks for the frequency spread, which means roughly, how far from integer may the frequencies go. The nearer to integer they are, the ‘cleaner’ looking the harmonographs are, but they tend to be perhaps less interesting. The further from integer they are, the more they’re likely to look messy.
+
+If you’ve seen harmonograph programs before you might expect there to be an outer loop for stepping through the ‘time’ variable. That’s not necessary here because numpy handles it for us, making the program simpler and much faster. The outer loop here gets user input and generates random parameters for each pendulum’s oscillation (i.e. sine wave): amplitude, frequency, and phase. The one inner loop computes, for each pendulum, the whole x and y vectors, at once. That is, numpy notices that ‘t’ is a vector and so knows to compute x and y using faster code than Python (C).
+
+Each picture is drawn in its own window, which remains on screen until the program exits, or you dismiss it. This way, you can compare several pictures and select the best if you want to keep some. To save a picture, click on the floppy disc icon on the window’s menu bar. Note that the image size depends on the window size you saved it from. To get a bigger picture (or smaller), first adjust the window size.
