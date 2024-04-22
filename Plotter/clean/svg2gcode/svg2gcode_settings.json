@@ -1,0 +1,25 @@
+{
+  "conversion": {
+    "tolerance": 0.002,
+    "feedrate": 1500.0,
+    "dpi": 96.0,
+    "origin": [
+      0.0,
+      0.0
+    ]
+  },
+  "machine": {
+    "supported_functionality": {
+      "circular_interpolation": true
+    },
+    "tool_on_sequence": "M03 S30",
+    "tool_off_sequence": "M05",
+    "begin_sequence": "M5;\nG0 X10 Y10 F300; #BL POINT MOVE\nG4 P1 \nM3 S30; \nG4 P1\nM5; # 1.\nG4 P1 \nM3 S30; \nG4 P1\nM5; # 2.\nG4 P1\nM3 S30; \nG4 P1\nM5; # MARK.\nG4 P1\nG0 X15 Y10 F300; #BL POINT\nG4 P1\nM3 S30; \nG4 P1\nG0 X10 Y10 F300; #BL POINT\nG0 X15 Y10 F300; #BL POINT\nG0 X10 Y10 F300; #BL POINT X\nG0 X10 Y15 F300; #BL POINT\nG0 X10 Y10 F300; #BL POINT \nG0 X10 Y15 F300; #BL POINT\nG0 X10 Y10 F300; #BL POINT Y\nG4 P1\nM5;\nG4 P1 \nG0 X200 Y10 F300; #BR POINT MOVE\nG4 P1\nM3 S30; \nG4 P1\nM5; # 1.\nG4 P1 \nM3 S30; \nG4 P1\nM5; # 2.\nG4 P1\nM3 S30; \nG4 P1\nM5; # MARK.\nG4 P1\nG0 X195 Y10 F300; #BR POINT X\nG4 P1\nM3 S30;\nG4 P1\nG0 X200 Y10 F300; #BR POINT\nG0 X195 Y10 F300; #BR POINT\nG0 X200 Y10 F300; #BR POINT X\nG0 X200 Y15 F300; #BR POINT \nG0 X200 Y10 F300; #BR POINT \nG0 X200 Y15 F300; #BR POINT \nG0 X200 Y10 F300; #BR POINT Y\nG4 P1\nM5;\nG4 P1\nG0 X200 Y287 F300; #TR POINT MOVE\nG0 X10 Y287 F300; #TL POINT MOVE\nM3 S30; \nG4 P1\nM5; # 1.\nG4 P1 \nM3 S30; \nG4 P1\nM5; # 2.\nG4 P1\nM3 S30; \nG4 P1\nM5; # MARK.\nG4 P1\nG0 X15 Y287 F300; #TL POINT \nM3 S30;\nG4 P1\nG0 X10 Y287 F300; #TL POINT\nG0 X15 Y287 F300; #TL POINT\nG0 X10 Y287 F300; #TL POINT X\nG0 X10 Y282 F300; #TL POINT \nG0 X10 Y287 F300; #TL POINT\nG0 X10 Y282 F300; #TL POINT \nG0 X10 Y287 F300; #TL POINT Y\nG4 P1\nM5;\nG4 P1\nG0 X200 Y287 F300; #TR POINT MOVE\nG4 P1\nM3 S30; \nG4 P1\nM5; # 1.\nG4 P1 \nM3 S30; \nG4 P1\nM5; # 2.\nG4 P1\nM3 S30; \nG4 P1\nM5; # MARK.\nG4 P1\nG0 X195 Y287 F300; #TR POINT X\nM3 S30;\nG4 P1\nG0 X200 Y287 F300; #TR POINT \nG0 X195 Y287 F300; #TR POINT \nG0 X200 Y287 F300; #TR POINT X\nG0 X200 Y282 F300; #TR POINT\nG0 X200 Y287 F300; #TR POINT \nG0 X200 Y282 F300; #TR POINT \nG0 X200 Y287 F300; #TR POINT Y\nG4 P1\nM5\nG4 P1\n;# Ready to PLOT",
+    "end_sequence": "M05;\nG00 X0 Y0 F300;"
+  },
+  "postprocess": {
+    "checksums": false,
+    "line_numbers": false,
+    "newline_before_comment": false
+  }
+}
