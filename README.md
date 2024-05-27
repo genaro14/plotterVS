@@ -101,3 +101,12 @@ Soldering required!
 Also before uploading GRBL to the board, the file 'cpu_map_atmega328.p' has to be modified or replaced.   
 Grbl patch [here](./Board/Nanoshield_fix/cpu_map_atmega328p.h)    
 Full details from [Instructables](https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/)
+
+## Results 
+Cncjs Example and result:
+![cncJs](./img/cncjs.png) 
+![eva](./img/e01.jpeg)        
+
+### Other:
+![death](./img/death.jpeg)        
+[View More](./img/) 
